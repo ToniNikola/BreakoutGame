@@ -1,0 +1,52 @@
+<Level
+  ResolutionX="1920"
+  ResolutionY="1080"
+  SpriteWidth="33"
+  SpriteHeight="11"
+  RowCount="30"
+  ColumnCount="20"
+  RowSpacing="3"
+  ColumnSpacing="3"
+  BackgroundTexture="Sprites/unluckystudio/Background/background.jpg"
+  MenuFont="fonts/MontereyFLF.ttf">
+  <BrickTypes>
+    <!--Soft  Brick  -->
+    <BrickType
+      Id="S"
+      Texture="Sprites/green_small.png"
+      HitPoints="1"
+      HitSound="Sounds/hit.wav"
+      BreakSound="Sounds/break_2.wav"
+      BreakScore="50"/>
+    <!--MediumBrick  -->
+    <BrickType
+      Id="M"
+      Texture="Sprites/blue_small.png"
+      HitPoints="2"
+      HitSound="Sounds/hit.wav"
+      BreakSound="Sounds/break_2.wav"
+      BreakScore="100"/>
+    <!--HardBrick  -->
+    <BrickType
+      Id="H"
+      Texture="Sprites/purple_small.png"
+      HitPoints="3"
+      HitSound="Sounds/hit.wav"
+      BreakSound="Sounds/break_2.wav"
+      BreakScore="150"/>
+    <!--ImpenetrableBrick  -->
+    <BrickType
+      Id="I"
+      Texture="Sprites/red_small.png"
+      HitPoints="Infinite"
+      HitSound="Sounds/hit.wav"/>
+  </BrickTypes>
+  <Bricks>
+    S _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ S
+    _ S _ _ _ _ S S H H H H S S _ _ _ _ S _
+    _ _ S _ _ _ _ _ _ _ _ _ _ _ _ _ _ S _ _
+    _ _ _ S _ _ _ _ _ _ _ _ _ _ _ _ S _ _ _
+    _ _ _ _ S I I I M M M M I I I S _ _ _ _
+    
+  </Bricks>
+</Level>
